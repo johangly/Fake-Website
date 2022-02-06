@@ -1,0 +1,13 @@
+[inert] {
+  pointer-events: none;
+  cursor: default;
+  -webkit-filter:grayscale(3px);
+    filter:grayscale(3px);
+}
+
+[inert], [inert] * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

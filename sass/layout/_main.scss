@@ -1,0 +1,330 @@
+@use "../base/functions" as func;
+@use "../base/extensions";
+@use "../base/variables" as var;
+
+* {
+	font-family: var.$poppins;
+	// outline: 1px solid rgba(255, 0, 0, 0.514);
+	color: var.$white;
+}
+body .main .hero * {
+	list-style: none;
+}
+body .main .soluciones * {
+	color: var.$black;
+	font-family: var.$poppins;
+}
+body {
+	.main {
+		.hero {
+			min-height: 100vh;
+			background-image: url("../images/exevi-tu-sherpa-digital.webp");
+			@extend %section;
+			&__h1 {
+				font-size: clamp(45px, 9vw, 80px);
+				font-weight: 700;
+				text-transform: capitalize;
+				margin: 0 20px;
+				text-align: center;
+				margin-bottom: 25px;
+			}
+			&__h2 {
+				text-transform: uppercase;
+				background-color: #fff;
+				color: var.$black;
+				font-size: clamp(16px, 4vw, 22px);
+				text-align: center;
+				padding: 6px 30px;
+				margin: 0 5px;
+				letter-spacing: 2.5px;
+			}
+		}
+		.soluciones {
+			padding: 90px clamp(11px, 5.5vw, 110px);
+			@extend %align-center;
+			flex-direction: column;
+			&__h2 {
+				@extend %section-title;
+				margin-bottom: 30px;
+				text-transform: capitalize;
+			}
+			&__h3 {
+				text-align: center;
+				font-size: clamp(16px, 2.5vw, 20px);
+				margin-bottom: 45px;
+			}
+			&__cards {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(260px, 350px));
+				grid-template-rows: minmax(200px, 500px);
+				gap: 15px;
+				.card__1,
+				.card__2,
+				.card__3,
+				.card__4 {
+					border-radius: 10px;
+					background-color: rgb(250, 250, 250);
+					transition: 300ms ease box-shadow;
+					&:hover {
+						box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+					}
+					.card__img {
+						border-top-left-radius: 10px;
+						border-top-right-radius: 10px;
+						overflow: hidden;
+						height: 40%;
+
+						.card__img--img {
+							max-width: 100%;
+							width: 100%;
+							-o-object-fit: cover;
+							object-fit: cover;
+							-o-object-position: center center;
+							object-position: center center;
+							height: 100%;
+							transition: 300ms ease transform;
+							&:hover {
+								transform: scale(1.2);
+							}
+						}
+					}
+					.card__content {
+						padding: 15px;
+						min-height: 60%;
+						display: flex;
+						align-items: flex-start;
+						justify-content: flex-start;
+						flex-direction: column;
+						.card__title {
+							margin-bottom: 20px;
+							font-size: 16px;
+							font-weight: 600;
+							display: block;
+							line-height: 24px;
+							color: rgba(0, 0, 0, 0.815);
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+						.card__p {
+							margin-bottom: 20px;
+							font-size: 13px;
+							line-height: 20px;
+							opacity: 0.6;
+						}
+						.card__button {
+							margin-top: auto;
+							border-radius: 40px;
+							display: inline-block;
+							padding: 12px 30px;
+							font-weight: 500;
+							border: 2px solid #08080828;
+							background-color: var.$white;
+							transition: 200ms ease all;
+							color: var.$black;
+							margin-bottom: 10px;
+							letter-spacing: 1px;
+							text-transform: uppercase;
+							&:hover {
+								background-color: var.$black;
+								color: var.$white;
+							}
+						}
+					}
+				}
+			}
+		}
+		.mejora {
+			background-image: url("../../images/mejora-la-eficiencia-de-tus-procesos-de-atencion-y-soporte-otrs.webp");
+			@extend %section;
+			&__h2 {
+				@extend %section-title;
+				margin-bottom: 40px;
+			}
+			&__h3 {
+				font-size: 24px;
+				margin-bottom: 60px;
+				text-align: center;
+			}
+			&__buttons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				.mejora__buttons--button {
+					@extend %button;
+				}
+			}
+		}
+		.canal {
+			@extend %section;
+			background-image: url("../../images/whatsapp-empresas-portada.jpg");
+			display: flex;
+			align-items: flex-end;
+			background-position: left;
+
+			&__content {
+				max-width: 50%;
+				&--span {
+					font-size: 20px;
+					display: block;
+					margin-bottom: 25px;
+				}
+				&--h2 {
+					@extend %section-title;
+					text-align: left;
+					margin-bottom: 25px;
+				}
+				&--button {
+					@extend %button;
+				}
+			}
+		}
+		.evoluciona {
+			@extend %section;
+			background-image: url("../../images/da-el-salto-de-excel-a-power-bi-cabecera.webp");
+			&__h2 {
+				@extend %section-title;
+				margin-bottom: 30px;
+			}
+			&__h3 {
+				font-size: 24px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			&__button {
+				@extend %button;
+			}
+		}
+		.automatiza {
+			@extend %section;
+			background-image: url("../../images/automatiza-la-administracion-de-it-cloud-y-aplicaciones-ansible.webp");
+			display: flex;
+			align-items: flex-end;
+			background-position: left;
+			&__content {
+				max-width: 50%;
+				&--span {
+					font-size: 20px;
+					display: block;
+					margin-bottom: 25px;
+				}
+				&--h2 {
+					@extend %section-title;
+					text-align: left;
+					margin-bottom: 25px;
+				}
+				&--button {
+					@extend %button;
+				}
+			}
+		}
+		.comunicacion {
+			@extend %section;
+			background-image: url("../../images/app-y-plataforma-de-comunicacion-movil-portada.jpg");
+			&__h2 {
+				@extend %section-title;
+				margin-bottom: 30px;
+				// font-size: clamp(34px, 5.5vw, 60px);
+			}
+			&__button {
+				@extend %button;
+			}
+		}
+		.telefonia {
+			@extend %section;
+			background-image: url("../../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
+			display: flex;
+			align-items: flex-end;
+			background-position: left;
+			&__content {
+				max-width: 50%;
+				&--span {
+					font-size: 20px;
+					display: block;
+					margin-bottom: 25px;
+				}
+				&--h2 {
+					@extend %section-title;
+					text-align: left;
+					margin-bottom: 25px;
+				}
+				&--button {
+					@extend %button;
+				}
+			}
+		}
+	}
+}
+
+// change hero subtitle
+
+@media only screen and (max-width: 746px) {
+	body {
+		.main {
+			.hero {
+				&__h2 {
+					background-color: transparent;
+					color: var.$white;
+					text-transform: lowercase;
+					height: auto;
+					&::first-letter {
+						text-transform: uppercase;
+					}
+				}
+			}
+			.canal {
+				&__content {
+					max-width: 100%;
+					&--button {
+						font-size: 95%;
+					}
+				}
+			}
+			.automatiza {
+				&__content {
+					max-width: 100%;
+					&--button {
+						font-size: 95%;
+					}
+				}
+			}
+			.telefonia {
+				&__content {
+					max-width: 100%;
+					&--button {
+						font-size: 95%;
+					}
+				}
+			}
+		}
+	}
+}
+// grid transition
+
+@media only screen and (max-width: 1360px) {
+	body {
+		.main {
+			.soluciones {
+				&__cards {
+					grid-template-columns: repeat(2, minmax(260px, 350px));
+				}
+			}
+		}
+	}
+}
+// grid transition
+@media only screen and (max-width: 676px) {
+	body {
+		.main {
+			.soluciones {
+				&__cards {
+					grid-template-columns: repeat(
+						auto-fill,
+						minmax(270px, 350px)
+					);
+				}
+			}
+		}
+	}
+}

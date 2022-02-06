@@ -1,0 +1,59 @@
+@use "functions" as func;
+@use "variables" as var;
+%align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+%section-title {
+	text-align: center;
+	font-size: clamp(36px, 5.5vw, 60px);
+	font-weight: bold;
+}
+
+%button {
+	margin: 10px;
+	background-color: var.$red;
+	color: var.$white;
+	padding: 12px 30px;
+	font-weight: 500;
+	border-radius: 40px;
+	text-transform: uppercase;
+	transition: 200ms ease all;
+	&:hover {
+		background-color: var.$white;
+		color: var.$red;
+	}
+}
+
+%first-letter {
+	&::first-letter {
+		text-transform: capitalize;
+	}
+}
+%section {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 540px;
+	padding: 90px clamp(11px, 5.5vw, 110px);
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-image: url("../../images/texture-header-solutions.png");
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		-webkit-filter: opacity(0.5);
+		filter: opacity(0.5);
+	}
+}
