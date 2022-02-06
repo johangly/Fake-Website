@@ -108,7 +108,6 @@ dropdownButton.forEach(el => {
 header.style.transform = "";
 main.style.transform = "";
 
-
 button.addEventListener("click", (e) => {
     contador = contador + 1;
     if (contador == 1) {
@@ -122,6 +121,7 @@ button.addEventListener("click", (e) => {
         main.classList.add("move");
         header.style.transform = "";
         mobileMenu.inert = false;
+        mobileMenu.setAttribute("aria-hidden", "false");
         header.classList.add("move");
         contador = contador - 2;
 
@@ -133,6 +133,7 @@ button.addEventListener("click", (e) => {
         mobileMenu.inert = true;
         main.style.transform = "none";
         header.style.transform = "none";
+        mobileMenu.setAttribute("aria-hidden", "true");
         dropdownButton.forEach(el => {
             el.classList.remove('active');
         });
@@ -159,7 +160,7 @@ searchButton.addEventListener('click', e => {
     }
 });
 
-window.onscroll = function () {
-    var y = window.scrollY;
-    console.log(y);
-};
+// window.onscroll = function () {
+//     var y = window.scrollY;
+//     console.log(y);
+// };

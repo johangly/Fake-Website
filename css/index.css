@@ -249,13 +249,13 @@ body .header .nav__ul .nav__ul--li .nav__dropdown--3 .nav__dropdown--li a, body 
   align-items: center;
 }
 
-body .main .soluciones__h2, body .main .mejora__h2, body .main .canal__content--h2, body .main .evoluciona__h2, body .main .automatiza__content--h2, body .main .comunicacion__h2, body .main .telefonia__content--h2 {
+body .main .soluciones__h2, body .main .mejora__h2, body .main .canal__content--h2, body .main .evoluciona__h2, body .main .automatiza__content--h2, body .main .comunicacion__h2, body .main .telefonia__content--h2, body .main .cultura__h2, body .main .empresas__h2 {
   text-align: center;
   font-size: clamp(36px, 5.5vw, 60px);
   font-weight: bold;
 }
 
-body .main .mejora__buttons .mejora__buttons--button, body .main .canal__content--button, body .main .evoluciona__button, body .main .automatiza__content--button, body .main .comunicacion__button, body .main .telefonia__content--button {
+body .main .mejora__buttons .mejora__buttons--button, body .main .canal__content--button, body .main .evoluciona__button, body .main .automatiza__content--button, body .main .comunicacion__button, body .main .telefonia__content--button, body .main .cultura__button {
   margin: 10px;
   background-color: #d12321;
   color: #fff;
@@ -265,12 +265,12 @@ body .main .mejora__buttons .mejora__buttons--button, body .main .canal__content
   text-transform: uppercase;
   transition: 200ms ease all;
 }
-body .main .mejora__buttons .mejora__buttons--button:hover, body .main .canal__content--button:hover, body .main .evoluciona__button:hover, body .main .automatiza__content--button:hover, body .main .comunicacion__button:hover, body .main .telefonia__content--button:hover {
+body .main .mejora__buttons .mejora__buttons--button:hover, body .main .canal__content--button:hover, body .main .evoluciona__button:hover, body .main .automatiza__content--button:hover, body .main .comunicacion__button:hover, body .main .telefonia__content--button:hover, body .main .cultura__button:hover {
   background-color: #fff;
   color: #d12321;
 }
 
-body .main .hero, body .main .mejora, body .main .canal, body .main .evoluciona, body .main .automatiza, body .main .comunicacion, body .main .telefonia {
+body .main .hero, body .main .mejora, body .main .canal, body .main .evoluciona, body .main .automatiza, body .main .comunicacion, body .main .telefonia, body .main .cultura {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +284,7 @@ body .main .hero, body .main .mejora, body .main .canal, body .main .evoluciona,
   min-height: 540px;
   padding: 90px clamp(11px, 5.5vw, 110px);
 }
-body .main .hero::after, body .main .mejora::after, body .main .canal::after, body .main .evoluciona::after, body .main .automatiza::after, body .main .comunicacion::after, body .main .telefonia::after {
+body .main .hero::after, body .main .mejora::after, body .main .canal::after, body .main .evoluciona::after, body .main .automatiza::after, body .main .comunicacion::after, body .main .telefonia::after, body .main .cultura::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -465,6 +465,7 @@ body .header .mobileMenu .mobileMenu__ul .mobileMenu__li:hover .mobileMenu__li--
 body .header .mobileMenu .mobileMenu__ul .mobileMenu__li .mobileMenu__li--a {
   color: #fff;
   font-size: 15px;
+  width: 100%;
   text-transform: uppercase;
   transition: 500ms ease all;
   padding: 18px;
@@ -582,7 +583,8 @@ body .main .hero * {
   list-style: none;
 }
 
-body .main .soluciones * {
+body .main .soluciones *,
+body .main .empresas * {
   color: #080808;
   font-family: "Poppins", sans-serif;
 }
@@ -736,6 +738,7 @@ body .main .mejora {
 }
 body .main .mejora__h2 {
   margin-bottom: 40px;
+  max-width: 1200px;
 }
 body .main .mejora__h3 {
   font-size: 24px;
@@ -800,6 +803,7 @@ body .main .comunicacion {
 }
 body .main .comunicacion__h2 {
   margin-bottom: 30px;
+  max-width: 900px;
 }
 body .main .telefonia {
   background-image: url("../../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
@@ -819,6 +823,133 @@ body .main .telefonia__content--h2 {
   text-align: left;
   margin-bottom: 25px;
 }
+body .main .cultura {
+  background-image: url("../../images/cultura-home.jpg");
+  align-items: flex-start;
+  background-position: right;
+}
+body .main .cultura__h2 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+body .main .cultura__h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+body .main .cultura hr {
+  height: 2px;
+  background-color: #fff;
+  width: 50px;
+  margin-bottom: 30px;
+}
+body .main .cultura__dates {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .cultura__dates .cultura__date {
+  max-width: 320px;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+body .main .cultura__dates .cultura__date__day {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  padding: 8px 5px;
+  margin-right: 15px;
+}
+body .main .cultura__dates .cultura__date__day p {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+body .main .cultura__dates .cultura__date__day--day {
+  font-size: 44px;
+  margin-bottom: 5px;
+}
+body .main .cultura__dates .cultura__date__day--month {
+  -webkit-filter: opacity(0.4);
+  filter: opacity(0.4);
+}
+body .main .cultura__dates .cultura__date__content {
+  display: flex;
+  flex-direction: column;
+}
+body .main .cultura__dates .cultura__date__content__title {
+  display: block;
+}
+body .main .cultura__dates .cultura__date__content__span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  margin-top: auto;
+  -webkit-filter: opacity(0.6);
+  filter: opacity(0.6);
+}
+body .main .cultura__dates .cultura__date__content__span--img {
+  max-width: 100%;
+  width: 20px;
+  margin-right: 5px;
+  margin-left: -4px;
+}
+body .main .empresas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 540px;
+  padding: 90px clamp(11px, 5.5vw, 110px);
+}
+body .main .empresas__h2 {
+  max-width: 950px;
+  margin-bottom: 30px;
+}
+body .main .empresas__button {
+  padding: 12px 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: 200ms ease all;
+  color: #080808;
+  border: 2px solid #080808;
+  background-color: #fff;
+}
+body .main .empresas__button:hover {
+  background-color: #080808;
+  color: #fff;
+}
+body .main .empresas__content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-top: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+@media only screen and (max-width: 922px) {
+  body .main .empresas__content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 514px) {
+  body .main .empresas__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+body .main .empresas__content__img {
+  padding: 5px;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+}
+body .main .empresas__content__img--img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 746px) {
   body .main .hero__h2 {
     background-color: transparent;
@@ -847,6 +978,9 @@ body .main .telefonia__content--h2 {
   body .main .telefonia__content--button {
     font-size: 95%;
   }
+  body .main .cultura__dates .cultura__date {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 1360px) {
   body .main .soluciones__cards {
@@ -856,6 +990,12 @@ body .main .telefonia__content--h2 {
 @media only screen and (max-width: 676px) {
   body .main .soluciones__cards {
     grid-template-columns: repeat(auto-fill, minmax(270px, 350px));
+  }
+}
+@media only screen and (max-width: 490px) {
+  body .main .cultura {
+    background-image: none;
+    background-color: #080808;
   }
 }
 

@@ -10,7 +10,8 @@
 body .main .hero * {
 	list-style: none;
 }
-body .main .soluciones * {
+body .main .soluciones *,
+body .main .empresas * {
 	color: var.$black;
 	font-family: var.$poppins;
 }
@@ -140,6 +141,7 @@ body {
 			&__h2 {
 				@extend %section-title;
 				margin-bottom: 40px;
+				max-width: 1200px;
 			}
 			&__h3 {
 				font-size: 24px;
@@ -225,6 +227,7 @@ body {
 			&__h2 {
 				@extend %section-title;
 				margin-bottom: 30px;
+				max-width: 900px;
 				// font-size: clamp(34px, 5.5vw, 60px);
 			}
 			&__button {
@@ -251,6 +254,148 @@ body {
 				}
 				&--button {
 					@extend %button;
+				}
+			}
+		}
+		.cultura {
+			@extend %section;
+			background-image: url("../../images/cultura-home.jpg");
+			align-items: flex-start;
+			background-position: right;
+			&__h2 {
+				@extend %section-title;
+				margin-bottom: 30px;
+				text-align: left;
+			}
+			&__h3 {
+				font-size: 24px;
+				text-align: left;
+				margin-bottom: 30px;
+			}
+			hr {
+				height: 2px;
+				background-color: #fff;
+				width: 50px;
+				margin-bottom: 30px;
+			}
+			&__dates {
+				margin-bottom: 30px;
+				display: flex;
+				flex-wrap: wrap;
+
+				.cultura__date {
+					max-width: 320px;
+					display: flex;
+					margin: 10px;
+					justify-content: center;
+					// align-items: center;
+					&__day {
+						border: 1px solid rgba(255, 255, 255, 0.171);
+						padding: 8px 5px;
+						margin-right: 15px;
+						p {
+							display: block;
+							text-transform: uppercase;
+							text-align: center;
+							font-weight: 600;
+						}
+						&--day {
+							font-size: 44px;
+							margin-bottom: 5px;
+						}
+						&--month {
+							-webkit-filter: opacity(0.4);
+							filter: opacity(0.4);
+						}
+					}
+					&__content {
+						display: flex;
+						// background-color: red;
+						flex-direction: column;
+						// justify-content: center;
+						// align-items: center;
+						&__title {
+							display: block;
+							// margin-bottom: 8px;
+						}
+						&__span {
+							display: flex;
+							align-items: center;
+							justify-content: flex-start;
+							font-size: 15px;
+							margin-top: auto;
+							// margin-bottom: 10px;
+							-webkit-filter: opacity(0.6);
+							filter: opacity(0.6);
+							&--img {
+								max-width: 100%;
+								width: 20px;
+								margin-right: 5px;
+								margin-left: -4px;
+							}
+						}
+					}
+				}
+			}
+			&__button {
+				@extend %button;
+			}
+		}
+		.empresas {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 540px;
+			padding: 90px clamp(11px, 5.5vw, 110px);
+			&__h2 {
+				@extend %section-title;
+				max-width: 950px;
+				margin-bottom: 30px;
+			}
+			&__button {
+				padding: 12px 30px;
+				margin-bottom: 30px;
+				font-weight: 500;
+				border-radius: 40px;
+				text-transform: uppercase;
+				transition: 200ms ease all;
+				color: var.$black;
+				border: 2px solid var.$black;
+				background-color: var.$white;
+				&:hover {
+					background-color: var.$black;
+					color: var.$white;
+				}
+			}
+			&__content {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+				border-top: 1px solid var.$empresas-img-border;
+				border-right: 1px solid var.$empresas-img-border;
+
+				@media only screen and (max-width: 922px) {
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: repeat(3, 1fr);
+				}
+				@media only screen and (max-width: 514px) {
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-rows: repeat(4, 1fr);
+				}
+				// grid-template-columns: repeat(
+				// 	auto-fit,
+				// 	minmax(min(160px, 300px), 1fr)
+				// );
+				// grid-template-rows: minmax(200px, 500px);
+				// gap: 15px;
+				&__img {
+					padding: 5px;
+					border-bottom: 1px solid var.$empresas-img-border;
+					border-left: 1px solid var.$empresas-img-border;
+					&--img {
+						max-width: 100%;
+					}
 				}
 			}
 		}
@@ -297,6 +442,13 @@ body {
 					}
 				}
 			}
+			.cultura {
+				&__dates {
+					.cultura__date {
+						max-width: 100%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -324,6 +476,16 @@ body {
 						minmax(270px, 350px)
 					);
 				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 490px) {
+	body {
+		.main {
+			.cultura {
+				background-image: none;
+				background-color: var.$black;
 			}
 		}
 	}

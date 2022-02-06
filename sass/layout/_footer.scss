@@ -1,0 +1,17 @@
+@use "../base/functions" as func;
+@use "../base/extensions";
+@use "../base/variables" as var;
+
+* {
+	font-family: var.$poppins;
+	// outline: 1px solid rgba(255, 0, 0, 0.514);
+	color: var.$white;
+}
+body .main .hero * {
+	list-style: none;
+}
+body .main .soluciones *,
+body .main .empresas * {
+	color: var.$black;
+	font-family: var.$poppins;
+}
