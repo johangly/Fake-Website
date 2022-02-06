@@ -734,7 +734,7 @@ body .main .soluciones__cards .card__4 .card__content .card__button:hover {
   color: #fff;
 }
 body .main .mejora {
-  background-image: url("../../images/mejora-la-eficiencia-de-tus-procesos-de-atencion-y-soporte-otrs.webp");
+  background-image: url("../images/mejora-la-eficiencia-de-tus-procesos-de-atencion-y-soporte-otrs.webp");
 }
 body .main .mejora__h2 {
   margin-bottom: 40px;
@@ -752,7 +752,7 @@ body .main .mejora__buttons {
   align-items: center;
 }
 body .main .canal {
-  background-image: url("../../images/whatsapp-empresas-portada.jpg");
+  background-image: url("../images/whatsapp-empresas-portada.jpg");
   display: flex;
   align-items: flex-end;
   background-position: left;
@@ -770,7 +770,7 @@ body .main .canal__content--h2 {
   margin-bottom: 25px;
 }
 body .main .evoluciona {
-  background-image: url("../../images/da-el-salto-de-excel-a-power-bi-cabecera.webp");
+  background-image: url("../images/da-el-salto-de-excel-a-power-bi-cabecera.webp");
 }
 body .main .evoluciona__h2 {
   margin-bottom: 30px;
@@ -781,7 +781,7 @@ body .main .evoluciona__h3 {
   margin-bottom: 30px;
 }
 body .main .automatiza {
-  background-image: url("../../images/automatiza-la-administracion-de-it-cloud-y-aplicaciones-ansible.webp");
+  background-image: url("../images/automatiza-la-administracion-de-it-cloud-y-aplicaciones-ansible.webp");
   display: flex;
   align-items: flex-end;
   background-position: left;
@@ -799,14 +799,14 @@ body .main .automatiza__content--h2 {
   margin-bottom: 25px;
 }
 body .main .comunicacion {
-  background-image: url("../../images/app-y-plataforma-de-comunicacion-movil-portada.jpg");
+  background-image: url("../images/app-y-plataforma-de-comunicacion-movil-portada.jpg");
 }
 body .main .comunicacion__h2 {
   margin-bottom: 30px;
   max-width: 900px;
 }
 body .main .telefonia {
-  background-image: url("../../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
+  background-image: url("../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
   display: flex;
   align-items: flex-end;
   background-position: left;
@@ -824,7 +824,7 @@ body .main .telefonia__content--h2 {
   margin-bottom: 25px;
 }
 body .main .cultura {
-  background-image: url("../../images/cultura-home.jpg");
+  background-image: url("../images/cultura-home.jpg");
   align-items: flex-start;
   background-position: right;
 }
@@ -997,6 +997,20 @@ body .main .empresas__content__img--img {
     background-image: none;
     background-color: #080808;
   }
+}
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body .main .hero * {
+  list-style: none;
+}
+
+body .main .soluciones *,
+body .main .empresas * {
+  color: #080808;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

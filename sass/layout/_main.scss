@@ -136,7 +136,7 @@ body {
 			}
 		}
 		.mejora {
-			background-image: url("../../images/mejora-la-eficiencia-de-tus-procesos-de-atencion-y-soporte-otrs.webp");
+			background-image: url("../images/mejora-la-eficiencia-de-tus-procesos-de-atencion-y-soporte-otrs.webp");
 			@extend %section;
 			&__h2 {
 				@extend %section-title;
@@ -160,7 +160,7 @@ body {
 		}
 		.canal {
 			@extend %section;
-			background-image: url("../../images/whatsapp-empresas-portada.jpg");
+			background-image: url("../images/whatsapp-empresas-portada.jpg");
 			display: flex;
 			align-items: flex-end;
 			background-position: left;
@@ -184,7 +184,7 @@ body {
 		}
 		.evoluciona {
 			@extend %section;
-			background-image: url("../../images/da-el-salto-de-excel-a-power-bi-cabecera.webp");
+			background-image: url("../images/da-el-salto-de-excel-a-power-bi-cabecera.webp");
 			&__h2 {
 				@extend %section-title;
 				margin-bottom: 30px;
@@ -200,7 +200,7 @@ body {
 		}
 		.automatiza {
 			@extend %section;
-			background-image: url("../../images/automatiza-la-administracion-de-it-cloud-y-aplicaciones-ansible.webp");
+			background-image: url("../images/automatiza-la-administracion-de-it-cloud-y-aplicaciones-ansible.webp");
 			display: flex;
 			align-items: flex-end;
 			background-position: left;
@@ -223,7 +223,7 @@ body {
 		}
 		.comunicacion {
 			@extend %section;
-			background-image: url("../../images/app-y-plataforma-de-comunicacion-movil-portada.jpg");
+			background-image: url("../images/app-y-plataforma-de-comunicacion-movil-portada.jpg");
 			&__h2 {
 				@extend %section-title;
 				margin-bottom: 30px;
@@ -236,7 +236,7 @@ body {
 		}
 		.telefonia {
 			@extend %section;
-			background-image: url("../../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
+			background-image: url("../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
 			display: flex;
 			align-items: flex-end;
 			background-position: left;
@@ -259,7 +259,7 @@ body {
 		}
 		.cultura {
 			@extend %section;
-			background-image: url("../../images/cultura-home.jpg");
+			background-image: url("../images/cultura-home.jpg");
 			align-items: flex-start;
 			background-position: right;
 			&__h2 {
