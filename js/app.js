@@ -6,6 +6,7 @@ let dropdown2 = document.querySelector('.nav__dropdown--2');
 let dropdown3 = document.querySelector('.nav__dropdown--3');
 let header = document.querySelector('.header');
 let main = document.querySelector('.main');
+let backToTop = document.querySelector('.backToTop');
 
 
 // dropdown buttons events
@@ -107,6 +108,7 @@ dropdownButton.forEach(el => {
 
 header.style.transform = "";
 main.style.transform = "";
+header.style.transition = "none";
 
 button.addEventListener("click", (e) => {
     contador = contador + 1;
@@ -117,6 +119,7 @@ button.addEventListener("click", (e) => {
         line1.classList.remove("no-animation");
         line2.classList.remove("no-animation");
         line3.classList.remove("no-animation");
+        header.style.transition = "500ms ease all";
         main.style.transform = "";
         main.classList.add("move");
         header.style.transform = "";
@@ -147,20 +150,46 @@ const searchButton = document.querySelector('.nav__button--search--img');
 const searchInput = document.querySelector('.nav__button--search--input');
 
 searchInput.value = '';
-
+searchInput.style.transition = "none";
 searchButton.addEventListener('click', e => {
 
     if (searchInput.className == 'nav__button--search--input show') {
         searchInput.classList.remove('show');
         searchInput.inert = true
         searchInput.value = '';
+        searchButton.style.backgroundColor = "transparent";
+
     } else {
         searchInput.classList.add('show');
-        searchInput.inert = false
+        searchInput.inert = false;
+        searchInput.style.transition = "300ms ease all";
+        searchButton.style.transition = "300ms ease all";
+        searchButton.style.backgroundColor = "#e6e6e650";
     }
 });
 
-// window.onscroll = function () {
-//     var y = window.scrollY;
-//     console.log(y);
-// };
+window.onscroll = function () {
+    var y = window.scrollY;
+    if (y => 100) {
+        header.classList.add('scrolled');
+        header.style.transition = "400ms ease all";
+        backToTop.classList.add('opacity-1');
+
+    }
+    if (y < 100) {
+        header.classList.remove('scrolled');
+        backToTop.classList.remove('opacity-1');
+    }
+};
+
+//cerrar el input de search al presionar ENTER
+
+function onKeyDownHandler(event) {
+    var codigo = event.which || event.keyCode;
+    if (codigo === 13) {
+        console.log("Tecla ENTER");
+        searchInput.classList.remove('show');
+        searchInput.inert = true
+        searchInput.value = '';
+    }
+}

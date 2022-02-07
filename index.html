@@ -15,13 +15,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
         rel="stylesheet">
-    <!-- Lato font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
-    <!-- Lobster font -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <!-- custom css styles -->
-    <link rel="stylesheet" href="css/index.css?10">
+    <link rel="stylesheet" href="css/index.css?20">
+    <!-- normalize css styles -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- inert css styles -->
     <link rel="stylesheet" type="text/css" href="css/inert.css" id="inert-style">
 </head>
 
@@ -87,10 +85,11 @@
                 </li>
             </ul>
         </nav>
-        <button class="nav__button--search">
+        <div class="nav__button--search">
             <img class="nav__button--search--img" src="images/14794106671556282358 1.svg" alt="search">
-            <input placeholder="Buscar..." class="nav__button--search--input" type="search">
-        </button>
+            <input onkeydown="onKeyDownHandler(event);" placeholder="Buscar..." class="nav__button--search--input"
+                type="search">
+        </div>
         <!-- mobile menu  -->
         <div inert="" aria-hidden="true" class="mobileMenu">
             <ul class="mobileMenu__ul">
@@ -163,9 +162,8 @@
             </ul>
         </div>
     </header>
-
     <main class="main">
-        <section class="hero">
+        <section id="hero" class="hero">
             <h1 class="hero__h1">tu sherpa digital</h1>
             <h2 class="hero__h2">siempre preparados para acompañarte</h2>
         </section>
@@ -185,7 +183,7 @@
                         <p class="card__p">Bots Conversacionales y Agentes Virtuales para mejorar la interacción con los
                             clientes. Reduce la carga de tus agentes
                             con un chatbot que ayuda a automatizar la venta y la atención al usuario.</p>
-                        <button class="card__button">entrar</button>
+                        <a href="#" class="card__button">entrar</a>
                     </div>
                 </article>
                 <article class="card__2">
@@ -202,7 +200,7 @@
                             Administración
                             de costes y Seguridad. Configuraciones
                             eficientes y al mejor coste.</p>
-                        <button class="card__button">entrar</button>
+                        <a href="#" class="card__button">entrar</a>
                     </div>
                 </article>
                 <article class="card__3">
@@ -218,7 +216,7 @@
                         <p class="card__p">Expertos en RPA. Asesoramiento personalizado para que puedas elegir el Robot
                             Software con el licenciamiento y
                             capacidades que mejor se adaptan a tu negocio.</p>
-                        <button class="card__button">entrar</button>
+                        <a href="#" class="card__button">entrar</a>
                     </div>
                 </article>
                 <article class="card__4">
@@ -231,7 +229,7 @@
                         <p class="card__p">Aprovecha todas las ventajas del Smartphone para mejorar la difusión de la
                             información en tu empresa y la conversión de
                             tus acciones. Da el salto a la comunicación como servicio con Dialenga.</p>
-                        <button class="card__button">entrar</button>
+                        <a href="#" class="card__button">entrar</a>
                     </div>
                 </article>
             </div>
@@ -241,40 +239,40 @@
             <h2 class="mejora__h2">Mejora la eficiencia de tus procesos de atencion y soporte</h2>
             <h3 class="mejora__h3">Optimiza ya tus flujos de trabajo con el software libre OTRS</h3>
             <div class="mejora__buttons">
-                <buttons class="mejora__buttons--button">atención al cliente</buttons>
-                <buttons class="mejora__buttons--button">gestión de servicios</buttons>
-                <buttons class="mejora__buttons--button">servicios de TI</buttons>
+                <a href="#" class="mejora__buttons--button">atención al cliente</a>
+                <a href="#" class="mejora__buttons--button">gestión de servicios</a>
+                <a href="#" class="mejora__buttons--button">servicios de TI</a>
             </div>
         </article>
         <article class="canal">
             <div class="canal__content">
                 <span class="canal__content--span">Integrado con email, web y teléfono</span>
                 <h2 class="canal__content--h2">Canal de WhatsApp para tu empresa</h2>
-                <button class="canal__content--button">conecta con tus clientes</button>
+                <a href="#" class="canal__content--button">conecta con tus clientes</a>
             </div>
         </article>
         <article class="evoluciona">
             <h2 class="evoluciona__h2">Evoluciona tus cuadros de mando</h2>
             <h3 class="evoluciona__h3">Convierte datos en oportunidades con Power BI</h3>
-            <button class="evoluciona__button">conoce power BI</button>
+            <a href="#" class="evoluciona__button">conoce power BI</a>
         </article>
         <article class="automatiza">
             <div class="automatiza__content">
                 <span class="automatiza__content--span">Simple y sin agentes</span>
                 <h2 class="automatiza__content--h2">Automatiza la administración de IT, cloud y aplicaciones</h2>
-                <button class="automatiza__content--button">red hat ansible</button>
+                <a href="#" class="automatiza__content--button">red hat ansible</a>
             </div>
         </article>
         <article class="comunicacion">
             <h2 class="comunicacion__h2">Comunicación Interna
                 para toda tu Empresa</h2>
-            <button class="comunicacion__button">conecta con tu organización</button>
+            <a href="#" class="comunicacion__button">conecta con tu organización</a>
         </article>
         <article class="telefonia">
             <div class="telefonia__content">
                 <span class="telefonia__content--span">Llama a fijos y móviles</span>
                 <h2 class="telefonia__content--h2">Telefonía y centralita integradas con Teams Voice</h2>
-                <button class="telefonia__content--button">microsoft teams voice</button>
+                <a href="#" class="telefonia__content--button">microsoft teams voice</a>
             </div>
         </article>
         <article class="cultura">
@@ -332,32 +330,13 @@
                     </div>
 
                 </article>
-                <!-- <article class="date">
-                    <div class="date__day">
-                        <p class="date__day--day">24</p>
-                        <p class="date__day--month">feb</p>
-                    </div>
-                    <a class="date__title" href="#">Conoce y compara 3 Procesos habituales de Migración a Azure</a>
-                    <span class="date__span"><img src="images/icon-event-location.png" title="icon event location"
-                            alt="icon event location"> En tus propias oficinas</span>
-                </article> -->
-                <!-- <article class="date">
-                    <div class="date__day">
-                        <p class="date__day--day">24</p>
-                        <p class="date__day--month">feb</p>
-                    </div>
-                    <a class="date__title" href="#">Conoce y compara 3 Procesos habituales de Migración a Azure</a>
-                    <span class="date__span"><img src="images/icon-event-location.png" title="icon event location"
-                            alt="icon event location"> En tus propias oficinas</span>
-                </article> -->
-
             </div>
-            <button class="cultura__button">conoce power BI</button>
+            <a href="#" class="cultura__button">conoce power BI</a>
 
         </article>
         <section class="empresas">
             <h2 class="empresas__h2">Algunas Empresas que confían en nosotros</h2>
-            <button class="empresas__button">ver más</button>
+            <a href="#" class="empresas__button">ver más</a>
             <div class="empresas__content">
                 <!-- endesa  -->
                 <div class="empresas__content__img">
@@ -405,15 +384,111 @@
                 </div>
             </div>
         </section>
+        <a class="backToTop" tabindex="-1" href="#hero"></a>
     </main>
     <footer class="footer">
-        <div class="footer__social"></div>
-        <div class="footer__info"></div>
-        <div class="footer__copyright"></div>
+        <div class="footer__images">
+            <div class="footer__images--sngular">
+                <img src="images/logo-sngular-sngular-iso-v2.webp" title="sngular sngular iso"
+                    alt="sngular sngular iso">
+            </div>
+            <div class="footer__images--social">
+                <ul>
+                    <li>
+                        <a class="footer__facebook" href="#">
+                            <img src="images/icon-facebook-white.png" alt="facebook" title="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__twitter" href="#">
+                            <img src="images/icon-twitter-white.png" alt="twitter" title="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__linkedin" href="#">
+                            <img src="images/icon-linkedin-white.png" alt="linkedin" title="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__youtube" href="#">
+                            <img src="images/icon-youtube-white.png" alt="youtube" title="youtube">
+                        </a>
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info--text">
+                <p><span class="uppercase">exevi</span> tiene como pilares principales <span
+                        class="uppercase-strong">estrategia, tecnología y personas.</span></p>
+                <p>Quienes nos conocen desde hace más de 20 años, saben que estamos en este mundo por pasión, para hacer
+                    las cosas bien.
+                    Por ello hemos desarrollado grandes proyectos y magníficas relaciones siempre.</p>
+                <p>Acompañamos a la persona. Los <span class="uppercase">ceo, cio</span> y los Directivos
+                    Funcionales en general tiene desafíos y necesitan compañeros de
+                    viaje con experiencia.</p>
+                <p>Somos el <span class="strong">sherpa digital</span> que te acompaña en tus proyectos
+                    tecnológicos y se compromete a estar contigo hasta el final.</p>
+                <p>Somos parte del ecosistema de talento e innovación de <span class="uppercase">sngular.</span></p>
+                <ul>
+                    <li><a href="#">aviso legal</a></li>
+                    <li><a href="#">pol. privacidad</a></li>
+                    <li><a href="#">pol. cookies</a></li>
+                    <li><a href="#">pol. calidad</a></li>
+                    <li><a href="#">pol. seguridad</a></li>
+                </ul>
+            </div>
+            <div class="footer__info--links">
+                <div class="links">
+                    <h2>¿a quién nos dirigimos?</h2>
+                    <ul>
+                        <li><a href="#">CEO</a></li>
+                        <li><a href="#">Director de Marketing y Comercial</a></li>
+                        <li><a href="#">Director de TI</a></li>
+                        <li><a href="#">Director Recursos Humanos</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h2>soluciones destacadas</h2>
+                    <ul>
+                        <li><a href="#">Chatbots inteligentes para atención y soporte a cliente</a></li>
+                        <li><a href="#">Gestión de Servicios Cloud y Administración de Costes en Azure</a></li>
+                        <li><a href="#">Automatización de Procesos de Negocio e IT con RPA</a></li>
+                        <li><a href="#">App de Comunicación Interna móvil</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h2>post recientes</h2>
+                    <ul>
+                        <li><a href="#">¿Qué puede hacer un robot por mí y por mis compañeros? Chatbots en el ámbito de
+                                RR.HH.</a></li>
+                        <li><a href="#">¿Por qué implantar la metodología OKR en mi organización?</a></li>
+                        <li><a href="#">Enrutamiento directo para Microsoft Teams con Ribbon SBC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright--copy">
+                <p class="copyright">Copyright EXEVI | Todos los derechos reservados</p>
+                <p class="direction">C/ Labastida, 1. 28034 Madrid</p>
+            </div>
+            <div class="footer__copyright--img">
+                <p>colaboramos con...</p>
+                <img src="images/patrocina-deportista.png" alt="patrocina un deportista"
+                    title="patrocina un deportista">
+                <img src="images/cruz-roja.png" alt="cruz roja" title="cruz roja">
+            </div>
+        </div>
     </footer>
-    <!-- <script src="outclick.js"></script> -->
+    <!-- custom javascript -->
     <script src="js/app.js"></script>
-    <script src="inert.js"></script>
+    <!-- javascript library inert.js -->
+    <script src="js/inert.js"></script>
 </body>
 
 </html>

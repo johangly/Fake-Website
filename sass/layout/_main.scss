@@ -4,11 +4,7 @@
 
 * {
 	font-family: var.$poppins;
-	// outline: 1px solid rgba(255, 0, 0, 0.514);
 	color: var.$white;
-}
-body .main .hero * {
-	list-style: none;
 }
 body .main .soluciones *,
 body .main .empresas * {
@@ -17,6 +13,7 @@ body .main .empresas * {
 }
 body {
 	.main {
+		overflow: hidden;
 		.hero {
 			min-height: 100vh;
 			background-image: url("../images/exevi-tu-sherpa-digital.webp");
@@ -204,6 +201,7 @@ body {
 			display: flex;
 			align-items: flex-end;
 			background-position: left;
+			min-height: 90vh;
 			&__content {
 				max-width: 50%;
 				&--span {
@@ -228,10 +226,10 @@ body {
 				@extend %section-title;
 				margin-bottom: 30px;
 				max-width: 900px;
-				// font-size: clamp(34px, 5.5vw, 60px);
 			}
 			&__button {
 				@extend %button;
+				font-size: clamp(13px, 1.2vw, 16px);
 			}
 		}
 		.telefonia {
@@ -239,6 +237,7 @@ body {
 			background-image: url("../images/telefonia-y-centralita-integradas-con-microsoft-teams-portada2.webp");
 			display: flex;
 			align-items: flex-end;
+			min-height: 90vh;
 			background-position: left;
 			&__content {
 				max-width: 50%;
@@ -288,7 +287,6 @@ body {
 					display: flex;
 					margin: 10px;
 					justify-content: center;
-					// align-items: center;
 					&__day {
 						border: 1px solid rgba(255, 255, 255, 0.171);
 						padding: 8px 5px;
@@ -310,13 +308,12 @@ body {
 					}
 					&__content {
 						display: flex;
-						// background-color: red;
 						flex-direction: column;
-						// justify-content: center;
-						// align-items: center;
 						&__title {
 							display: block;
-							// margin-bottom: 8px;
+							&:hover {
+								text-decoration: underline;
+							}
 						}
 						&__span {
 							display: flex;
@@ -324,7 +321,6 @@ body {
 							justify-content: flex-start;
 							font-size: 15px;
 							margin-top: auto;
-							// margin-bottom: 10px;
 							-webkit-filter: opacity(0.6);
 							filter: opacity(0.6);
 							&--img {
@@ -383,12 +379,6 @@ body {
 					grid-template-columns: repeat(2, 1fr);
 					grid-template-rows: repeat(4, 1fr);
 				}
-				// grid-template-columns: repeat(
-				// 	auto-fit,
-				// 	minmax(min(160px, 300px), 1fr)
-				// );
-				// grid-template-rows: minmax(200px, 500px);
-				// gap: 15px;
 				&__img {
 					padding: 5px;
 					border-bottom: 1px solid var.$empresas-img-border;
@@ -398,6 +388,50 @@ body {
 					}
 				}
 			}
+		}
+		.backToTop {
+			position: fixed;
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.671);
+			width: 34px;
+			height: 34px;
+			bottom: 10px;
+			right: 10px;
+			align-items: center;
+			flex-direction: column-reverse;
+			justify-content: center;
+			transition: 300ms ease all;
+			border-radius: 5px;
+			z-index: 100;
+			opacity: 0;
+			&::after {
+				content: "";
+				width: 10px;
+				height: 10px;
+				background-color: transparent;
+				transform: rotate(45deg);
+				border-top: 2px solid var.$white;
+				transition: 100ms ease all;
+				border-left: 2px solid var.$white;
+			}
+			&::before {
+				content: "";
+				transition: 100ms ease all;
+				width: 12px;
+				height: 2px;
+				background-color: transparent;
+				border-top: 2px solid var.$white;
+			}
+			&:hover:before {
+				border-top: 2px solid var.$red;
+			}
+			&:hover:after {
+				border-top: 2px solid var.$red;
+				border-left: 2px solid var.$red;
+			}
+		}
+		.opacity-1 {
+			opacity: 1;
 		}
 	}
 }
@@ -480,6 +514,7 @@ body {
 		}
 	}
 }
+// cultura background change
 @media only screen and (max-width: 490px) {
 	body {
 		.main {
