@@ -3,7 +3,7 @@
 
 # Fake-Website
 
-Copia del Frontend de [EXEVI](https://www.exevi.com/) web con propositos educativos y de practica
+Copia del Frontend de [EXEVI](https://www.exevi.com/)(Original) web con propositos educativos y de practica
 
 ### Proceso de creacion
 
@@ -13,7 +13,7 @@ En el proceso de maquetacion se uso HTML, CSS y SASS, para las funciones control
 
 ### Links
 
-- Live Site URL: [exevi-fake-website](https://johangly.github.io/exevi-fake-website/)
+- Live Site URL: [exevi-fake-website](https://johangly.github.io/exevi-fake-website/)(Mi Copia)
 
 ### Built with
 
