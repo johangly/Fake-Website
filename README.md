@@ -3,16 +3,13 @@
 
 # Fake-Website
 
-Copia del Frontend de una pagina web con propositos educativos y de practica
+Copia del Frontend de [EXEVI](https://www.exevi.com/) web con propositos educativos y de practica
 
 ### Proceso de creacion
 
 En el proceso de maquetacion se uso HTML, CSS y SASS, para las funciones controladoras de el menu desplegable, el botton de search y los dropsdowns se uso Javascript, se implemento la libreria inert.js para deshabilitar ciertas cosas para que no fueran seleccionadas con Tab con el objetivo de mejorar la accesibilidad para lectores de pantalla
 
 ![](./screenshots/screenshot-2.png)
-
-
-
 
 ### Links
 
@@ -23,7 +20,9 @@ En el proceso de maquetacion se uso HTML, CSS y SASS, para las funciones control
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Sass
+- Grid
+- Sass || @extend
+- JavaScript
 
 ## Author
 
