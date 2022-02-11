@@ -120,10 +120,14 @@ body {
 			background-color: transparent;
 			margin: 0 5px;
 			cursor: pointer;
-			img {
-				box-sizing: content-box;
-				padding: 15px;
-				border-radius: 5px;
+			button {
+				background-color: transparent;
+				@extend %align-center;
+				img {
+					box-sizing: content-box;
+					padding: 15px;
+					border-radius: 5px;
+				}
 			}
 			.nav__button--search--input {
 				opacity: 0;

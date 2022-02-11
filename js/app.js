@@ -76,7 +76,6 @@ dropdown3.addEventListener('mouseout', e = () => {
 
 });
 
-
 // hamburguer button
 
 const button = document.querySelector(".button-hamburguer");
@@ -86,7 +85,7 @@ const line3 = document.querySelector(".line-3");
 let contador = 0;
 let mobileMenu = document.querySelector('.mobileMenu');
 let dropdownButton = document.querySelectorAll('.dropdown__button');
-
+const mobileButtonLink = document.querySelectorAll('.mobileMenu__li--a');
 // mobile menu events
 
 dropdownButton.forEach(el => {
@@ -104,6 +103,9 @@ dropdownButton.forEach(el => {
         }
 
     });
+});
+mobileButtonLink.forEach(el => {
+    el.setAttribute('tabindex', '-1');
 });
 
 header.style.transform = "";
@@ -127,12 +129,18 @@ button.addEventListener("click", (e) => {
         mobileMenu.setAttribute("aria-hidden", "false");
         header.classList.add("move");
         contador = contador - 2;
+        mobileButtonLink.forEach(el => {
+            el.setAttribute('tabindex', '0');
+        });
 
     } else {
         line1.classList.remove("animation-1");
         line2.classList.remove("animation-3");
         line3.classList.remove("animation-2");
         // header.classList.remove("move");
+        mobileButtonLink.forEach(el => {
+            el.setAttribute('tabindex', '-1');
+        });
         mobileMenu.inert = true;
         main.style.transform = "none";
         header.style.transform = "none";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -33,10 +33,10 @@
                 alt="exevi singular solutions" title="Exevi Singular Solutions">
         </a>
         <!-- hamburguer button -->
-        <button href="#" class="button-hamburguer">
-            <div class="line-1 no-animation animated"></div>
-            <div class="line-2 no-animation animated"></div>
-            <div class="line-3 no-animation animated"></div>
+        <button tabindex="0" class="button-hamburguer">
+            <dl class="line-1 no-animation animated"></dl>
+            <dl class="line-2 no-animation animated"></dl>
+            <dl class="line-3 no-animation animated"></dl>
         </button>
         <!-- nav  -->
         <nav class="nav">
@@ -85,12 +85,12 @@
             </ul>
         </nav>
         <div class="nav__button--search">
-            <img class="nav__button--search--img" src="images/14794106671556282358 1.svg" alt="search">
+            <button tabindex="0"><img class="nav__button--search--img" src="images/searchBtn.svg" alt="search"></button>
             <input onkeydown="onKeyDownHandler(event);" placeholder="Buscar..." class="nav__button--search--input"
                 type="search">
         </div>
         <!-- mobile menu  -->
-        <div inert="" aria-hidden="true" class="mobileMenu">
+        <div aria-hidden="true" class="mobileMenu">
             <ul class="mobileMenu__ul">
                 <li id="mobileMenu" class="mobileMenu__li dropdown__button">
                     <a href="#mobileMenu" class="mobileMenu__li--a">soluciones</a>
@@ -166,7 +166,7 @@
             <h1 class="hero__h1">tu sherpa digital</h1>
             <h2 class="hero__h2">siempre preparados para acompañarte</h2>
         </section>
-        <article class="soluciones">
+        <section class="soluciones">
             <h2 class="soluciones__h2">soluciones destacadas</h2>
             <h3 class="soluciones__h3">Las más novedosas, solicitadas o implantadas</h3>
             <div class="soluciones__cards">
@@ -233,8 +233,8 @@
                 </article>
             </div>
 
-        </article>
-        <article class="mejora">
+        </section>
+        <section class="mejora">
             <h2 class="mejora__h2">Mejora la eficiencia de tus procesos de atencion y soporte</h2>
             <h3 class="mejora__h3">Optimiza ya tus flujos de trabajo con el software libre OTRS</h3>
             <div class="mejora__buttons">
@@ -242,39 +242,39 @@
                 <a href="" class="mejora__buttons--button">gestión de servicios</a>
                 <a href="" class="mejora__buttons--button">servicios de TI</a>
             </div>
-        </article>
-        <article class="canal">
+        </section>
+        <section class="canal">
             <div class="canal__content">
                 <span class="canal__content--span">Integrado con email, web y teléfono</span>
                 <h2 class="canal__content--h2">Canal de WhatsApp para tu empresa</h2>
                 <a href="" class="canal__content--button">conecta con tus clientes</a>
             </div>
-        </article>
-        <article class="evoluciona">
+        </section>
+        <section class="evoluciona">
             <h2 class="evoluciona__h2">Evoluciona tus cuadros de mando</h2>
             <h3 class="evoluciona__h3">Convierte datos en oportunidades con Power BI</h3>
             <a href="" class="evoluciona__button">conoce power BI</a>
-        </article>
-        <article class="automatiza">
+        </section>
+        <section class="automatiza">
             <div class="automatiza__content">
                 <span class="automatiza__content--span">Simple y sin agentes</span>
                 <h2 class="automatiza__content--h2">Automatiza la administración de IT, cloud y aplicaciones</h2>
                 <a href="" class="automatiza__content--button">red hat ansible</a>
             </div>
-        </article>
-        <article class="comunicacion">
+        </section>
+        <section class="comunicacion">
             <h2 class="comunicacion__h2">Comunicación Interna
                 para toda tu Empresa</h2>
             <a href="" class="comunicacion__button">conecta con tu organización</a>
-        </article>
-        <article class="telefonia">
+        </section>
+        <section class="telefonia">
             <div class="telefonia__content">
                 <span class="telefonia__content--span">Llama a fijos y móviles</span>
                 <h2 class="telefonia__content--h2">Telefonía y centralita integradas con Teams Voice</h2>
                 <a href="" class="telefonia__content--button">microsoft teams voice</a>
             </div>
-        </article>
-        <article class="cultura">
+        </section>
+        <section class="cultura">
             <h2 class="cultura__h2">Cultura para la Era Digital</h2>
             <h3 class="cultura__h3">Artículos, Webinars, Seminarios, Talleres y mucho más. ¡Hechos pensando en ti!</h3>
             <hr>
@@ -332,7 +332,7 @@
             </div>
             <a href="" class="cultura__button">conoce power BI</a>
 
-        </article>
+        </section>
         <section class="empresas">
             <h2 class="empresas__h2">Algunas Empresas que confían en nosotros</h2>
             <a href="" class="empresas__button">ver más</a>

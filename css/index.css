@@ -252,7 +252,7 @@ body::-webkit-scrollbar-thumb {
 
 body .main .soluciones, body .header .nav__ul .nav__ul--li .nav__dropdown--1 .nav__dropdown--li a,
 body .header .nav__ul .nav__ul--li .nav__dropdown--2 .nav__dropdown--li a,
-body .header .nav__ul .nav__ul--li .nav__dropdown--3 .nav__dropdown--li a, body .header .mobileMenu .mobileMenu__ul .mobileMenu__li, body .header .mobileMenu .mobileMenu__ul .dropdown__button, body .header .mobileMenu .mobileMenu__ul .dropdown__button .mobileMenu__dropdown--ul .mobileMenu__dropdown--li {
+body .header .nav__ul .nav__ul--li .nav__dropdown--3 .nav__dropdown--li a, body .header .nav__button--search button, body .header .mobileMenu .mobileMenu__ul .mobileMenu__li, body .header .mobileMenu .mobileMenu__ul .dropdown__button, body .header .mobileMenu .mobileMenu__ul .dropdown__button .mobileMenu__dropdown--ul .mobileMenu__dropdown--li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,7 +428,10 @@ body .header .nav__button--search {
   margin: 0 5px;
   cursor: pointer;
 }
-body .header .nav__button--search img {
+body .header .nav__button--search button {
+  background-color: transparent;
+}
+body .header .nav__button--search button img {
   box-sizing: content-box;
   padding: 15px;
   border-radius: 5px;
