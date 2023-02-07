@@ -219,7 +219,6 @@
 }
 
 body {
-  max-width: 1726px;
   min-height: 100vh;
 }
 
@@ -331,7 +330,6 @@ body .header {
   height: 91px;
   z-index: 100;
   justify-content: space-between;
-  max-width: 1726px;
 }
 body .header__logo .header__logo--img {
   width: 150px;
@@ -445,7 +443,7 @@ body .header .nav__button--search .nav__button--search--input {
   padding: 8px;
   transform: scale(0);
   width: 250px;
-  background-color: #dbdbdb;
+  background-color: rgb(219, 219, 219);
   border-radius: 5px;
   color: #080808;
   border: 10px solid #fff;
@@ -474,7 +472,7 @@ body .header .mobileMenu {
 body .header .mobileMenu .mobileMenu__ul .mobileMenu__li {
   justify-content: flex-start;
   list-style: none;
-  border-top: 1px solid #ffffff0d;
+  border-top: 1px solid rgba(255, 255, 255, 0.0509803922);
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 body .header .mobileMenu .mobileMenu__ul .mobileMenu__li:hover .mobileMenu__li--a {
@@ -501,7 +499,7 @@ body .header .mobileMenu .mobileMenu__ul .dropdown__button .mobileMenu__li--a::a
   transition: 300ms ease all;
   height: 12px;
   transform: rotate(45deg);
-  border-bottom: 3px solid #9c9c9c;
+  border-bottom: 3px solid rgb(156, 156, 156);
   border-right: 3px solid #fff;
   background-color: transparent;
 }
@@ -521,7 +519,7 @@ body .header .mobileMenu .mobileMenu__ul .dropdown__button .mobileMenu__dropdown
   padding: 18px;
   width: 100%;
   list-style: none;
-  border-top: 1px solid #ffffff0d;
+  border-top: 1px solid rgba(255, 255, 255, 0.0509803922);
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 body .header .mobileMenu .mobileMenu__ul .dropdown__button .mobileMenu__dropdown--ul .mobileMenu__dropdown--li:hover {
@@ -688,7 +686,7 @@ body .main .soluciones__cards .card__2,
 body .main .soluciones__cards .card__3,
 body .main .soluciones__cards .card__4 {
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: rgb(250, 250, 250);
   transition: 300ms ease box-shadow;
 }
 body .main .soluciones__cards .card__1:hover,
@@ -771,7 +769,7 @@ body .main .soluciones__cards .card__4 .card__content .card__button {
   display: inline-block;
   padding: 12px 30px;
   font-weight: 500;
-  border: 2px solid #08080828;
+  border: 2px solid rgba(8, 8, 8, 0.1568627451);
   background-color: #fff;
   transition: 200ms ease all;
   color: #080808;
